@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.book{
+    transform: perspective(50in) rotateY(25deg);
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.main{
+    display: inline-block;
+    height: calc(13.7in - 3.25in);
+    width: calc(14.5in - 1.25in);
+    background: url("/public/img/exam-test.webp") no-repeat -1.25in -1.5in;
+    box-shadow: -30px 6px 30px 15px rgb(0 0 0 / 38%), 0 0 6px rgba(0, 0, 0, .04);
+    border-radius: 0 .1in .1in 0;
+}
+.side{
+    display: inline-block;
+    height: calc(13.7in - 3.25in);
+    width: calc(1.25in * 1);
+    transform: rotateY(-90deg);
+    transform-origin: 100% 100%;
+    background: url("/public/img/exam-test.webp") no-repeat 0 -1.5in;
+    border-radius: .1in 0 0 .1in;
+}
+.shadow{
+    height: 100%;
+    width: 100%;
+    background: #00000020;
+}
+.mash{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(white .01in, transparent .01in) repeat;
+    background-size: .1in .1in;
+    filter: blur(.03in);
+}
